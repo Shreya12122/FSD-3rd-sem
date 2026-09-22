@@ -1,107 +1,43 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial;
+body
+{
+    font-family: Arial, sans-serif;
+    background: rgb(130, 8, 8);
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+    padding-top: 20px;
 }
 
-body{
-    background:brown;
+form
+{
+    display: inline-block;
+    text-align: left;
+    background-color: rgb(238, 176, 176);
+    padding: 20px;
+    border-radius: 20px;
 }
 
-.container{
-    width:90%;
-    margin:30px auto;
+h2
+{
+    color: white;
 }
 
-h1{
-    text-align:center;
-    color:light pink;
-    margin-bottom:20px;
+button
+{
+    background-color: rgb(130, 8, 8);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.summary{
-    width:220px;
-    margin:auto;
-    background:lightblue ;
-    color:white;
-    padding:15px;
-    text-align:center;
-    border-radius:8px;
-    font-size:22px;
-    margin-bottom:20px;
+button:hover
+{
+    background-color: rgb(100, 5, 5);
 }
 
-.form{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:12px;
-    margin-bottom:20px;
-}
-
-.form input,
-.form select{
-    padding:10px;
-    border:1px white;
-    border-radius:6px;
-}
-
-.form button{
-    background:beige;
-    color:white;
-    border:none;
-    cursor:pointer;
-    border-radius:6px;
-}
-
-.form button:hover{
-    background:green;
-}
-
-.controls{
-    display:flex;
-    gap:15px;
-    margin-bottom:20px;
-}
-
-.controls input,
-.controls select{
-    padding:10px;
-    border:1px white;
-    border-radius:6px;
-}
-
-.controls input{
-    flex:1;
-}
-
-table{
-    width:100%;
-    background:white;
-    border-collapse:collapse;
-}
-
-th{
-    background:blue;
-    color:white;
-    padding:12px;
-}
-
-td{
-    text-align:center;
-    padding:12px;
-    border-bottom:1px white;
-}
-
-tr:hover{
-    background:white;
-}
-
-button.delete{
-    background:red;
-    color:white;
-    border:none;
-    padding:8px 12px;
-    border-radius:5px;
-    cursor:pointer;
+.button-container
+{
+    text-align: center;
 }

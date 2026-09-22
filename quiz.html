@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Quiz Registration</h2>
+
+    <form id="quizForm">
+
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label>Roll Number:</label>
+        <input type="text" name="roll" placeholder="Enter roll number" required>
+        <br><br>
+
+        <label>Section:</label>
+        <input type="radio" name="section" value="A" required> A
+        <input type="radio" name="section" value="B"> B
+        <input type="radio" name="section" value="C"> C
+        <br><br>
+
+        <div class="button-container">
+            <button type="submit">Start Quiz</button>
+        </div>
+
+    </form>
+
+    <script>
+        document.getElementById("quizForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            window.location.href = "questions.html";
+        });
+    </script>
+
+</body>
+</html>

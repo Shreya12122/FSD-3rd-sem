@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Questions</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+<style>
+    body
+{
+    font-family: Arial, sans-serif;
+    background: rgb(130, 8, 8);
+    margin: 0;
+    padding: 20px;
+}
+h2
+{
+    text-align: center;
+    color: rgb(130, 8, 8);
+}
+h2{
+    text-align: center;
+    color: rgb(245, 243, 243);
+}
+.quiz-info
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.question
+{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.question p
+{
+    font-weight: bold;
+}
+
+.question label
+{
+    display: block;
+    margin: 10px 0;
+}
+
+.button-container
+{
+    text-align: center;
+    color:white;
+}
+
+button
+{
+    background-color: rgb(130, 8, 8);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: rgb(206, 145, 145);
+}
+
+#result
+{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+</style>
+
+<body>
+
+    <div class="quiz-container">
+
+        <h2>Quiz Questions</h2>
+
+        <div class="quiz-info">
+            <span>Total Questions: <b>5</b></span>
+            <span>Marks: <b>5</b></span>
+            <span>1 mark each</span>
+        </div>
+
+        <form id="quizForm">
+
+            <div class="question">
+                <p>Question 1: What is the capital of France?</p>
+
+                <label><input type="radio" name="q1" value="A" required> A - Berlin</label>
+                <label><input type="radio" name="q1" value="B"> B - Madrid</label>
+                <label><input type="radio" name="q1" value="C"> C - Paris</label>
+                <label><input type="radio" name="q1" value="D"> D - Rome</label>
+            </div>
+
+            <div class="question">
+                <p>Question 2: What is 2 + 2?</p>
+
+                <label><input type="radio" name="q2" value="A" required> A - 3</label>
+                <label><input type="radio" name="q2" value="B"> B - 4</label>
+                <label><input type="radio" name="q2" value="C"> C - 5</label>
+                <label><input type="radio" name="q2" value="D"> D - 6</label>
+            </div>
+
+            <div class="question">
+                <p>Question 3: Which planet is known as the Red Planet?</p>
+
+                <label><input type="radio" name="q3" value="A" required> A - Earth</label>
+                <label><input type="radio" name="q3" value="B"> B - Mars</label>
+                <label><input type="radio" name="q3" value="C"> C - Jupiter</label>
+                <label><input type="radio" name="q3" value="D"> D - Saturn</label>
+            </div>
+
+            <div class="question">
+                <p>Question 4: What is the largest ocean on Earth?</p>
+
+                <label><input type="radio" name="q4" value="A" required> A - Atlantic Ocean</label>
+                <label><input type="radio" name="q4" value="B"> B - Indian Ocean</label>
+                <label><input type="radio" name="q4" value="C"> C - Arctic Ocean</label>
+                <label><input type="radio" name="q4" value="D"> D - Pacific Ocean</label>
+            </div>
+
+            <div class="question">
+                <p>Question 5: Who wrote 'Romeo and Juliet'?</p>
+
+                <label><input type="radio" name="q5" value="A" required> A - Charles Dickens</label>
+                <label><input type="radio" name="q5" value="B"> B - William Shakespeare</label>
+                <label><input type="radio" name="q5" value="C"> C - Mark Twain</label>
+                <label><input type="radio" name="q5" value="D"> D - Jane Austen</label>
+            </div>
+
+            <div class="button-container">
+                <button type="submit">Submit Answers</button>
+            </div>
+
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="questions.js"></script>
+
+</body>
+</html>
